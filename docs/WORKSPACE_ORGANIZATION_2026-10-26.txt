@@ -1,0 +1,89 @@
+CRYSTALLOGRAPHIC ORTHOGONAL INDEXER 1.0 - WORKSPACE ORGANIZATION
+2026-10-26 (America/New_York)
+
+RESULT
+Project folder renamed from abpcstar-converter to:
+Crystallographic Orthogonal Indexer
+
+The active source is at the project root: main.py and
+crystallographic_orthogonal_indexer.py. Current tests/, tools/ and packaging/
+are beside them. Product version remains 1.0. Application calculations, GUI,
+launcher, source tests and build recipes were moved without changing their bytes.
+
+CURRENT ENTRY POINTS
+README.md: run/test instructions and folder map.
+AGENTS.md: established scientific/scope/background-testing instructions.
+docs/PROJECT_STATE.json: one authoritative current state; paths are project-relative.
+docs/DECISIONS.jsonl: consolidated decisions, each retaining its source-log identity.
+docs/CHANGELOG_v1.0.txt: existing product-change notes, unchanged.
+tools/run_source_validation.py: current portable background runner.
+validation/: newly generated source-test and integrity receipts.
+
+HISTORICAL ORGANIZATION
+archive/baseline/: all 31 original handoff payload files.
+archive/source-archive/: original handoff ZIP.
+archive/versions/app_v1_3_1/: complete validated legacy working copy.
+archive/audit/: original transfer verifier and audit/completion receipts.
+archive/validation/: all prior test/GUI/diagnostic receipts and scripts, including
+  the former active application's copied receipt history.
+archive/records/states/: all original state snapshots and old latest pointer.
+archive/records/reports/: prior audit, source-validation and rename reports.
+archive/records/decisions/: original decision logs.
+archive/application-history/: prior changelog and synthetic GUI TXT output.
+archive/organization-2026-10-26/: pre-layout file inventory/path map, original
+  README backup and relocation-stage receipt.
+
+All 135 pre-layout files (1,875,458 bytes) were retained and verified against
+their original SHA-256 values. README.md is the only existing file whose current
+contents changed: its exact previous bytes remain under
+archive/organization-2026-10-26/originals/README.md. Other original contents,
+including scientific reference data and every historical receipt, were not
+rewritten. Duplicated historical evidence is grouped, not deleted.
+
+path-map.json records old-relative to new-relative locations plus sizes/hashes;
+its source_root records the previous absolute project location. Historical
+receipts intentionally retain the paths recorded at their original run. Use
+this map for relocation, not the old recorded path as a current entry point.
+Only verified empty old directories were removed. OneDrive initially blocked
+empty-directory removal with a read-only attribute; after verifying all moved
+file hashes, that attribute was cleared only on the verified empty old folders.
+No file contents were discarded and no directory was recursively deleted.
+
+CURRENT CHANGES TO SUPPORT THE LAYOUT
+- Promote active app, tests, packaging and existing helpers to project root.
+- Rewrite README.md as the current entry point; preserve its original copy.
+- Add AGENTS.md, current consolidated state/decisions and this report.
+- Derive tools/run_source_validation.py from the preserved prior runner; replace
+  its fixed working-copy path with project-root discovery. The old runner remains
+  unchanged in archive/. New temporary/output paths are inside validation/.
+- Add .gitignore for local archives, caches, build outputs and temporary reports.
+  archive/ is retained on disk but ignored by Git by default; current scientific
+  tests include their unchanged required fixture independently of the archive.
+  No Git repository, commit or push was created by this reorganization.
+
+OBSERVED VALIDATION
+All 43 existing source-test methods passed from the renamed project root:
+zero failures, errors or skips. Hidden Tk tests were used; visible_gui_tests=false
+and desktop_automation=false. Existing Python 3.12.14 was used; no dependencies
+or tools were installed. The new runner used validation/temporary/ and wrote
+validation/layout-background-source-tests-2026-10-26.json and .log.
+All active application/test/build source file hashes match their pre-layout
+values. The accepted reference fixture and original ZIP hashes also match.
+See validation/organization-integrity-2026-10-26.json for complete file checks.
+
+BOUNDARIES / NEXT TASK
+The scientific model and accepted physical reference are unchanged. Actual
+sample Top hkl is still absent. Interactive chooser/high-DPI acceptance remains
+pending; no desktop control was used. Windows compilation, dependency/tool
+installation and installation/upgrade/uninstall QA remain deferred until the
+user requests them. App version is still 1.0; no new compiled release is claimed.
+Continue future source work from this root after reading README.md and
+PROJECT_STATE.json. Use tools/run_source_validation.py for background checks.
+
+SUGGESTED GIT COMMIT
+Summary: Organize COI workspace and rename project folder
+Description: Promote the active v1.0 source to the project root, group historical
+files under archive/, consolidate current state/decisions under docs/, and make
+the background test runner independent of the old folder layout. Preserve all
+135 original file contents. Validation: 43 background tests passed, no failures,
+errors or skips. No scientific code, version, build or installation change.

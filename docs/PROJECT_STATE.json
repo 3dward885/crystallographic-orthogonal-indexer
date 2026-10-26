@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "checkpoint_revision": "1.4",
+  "recorded_at_utc": "2026-10-26T14:11:22.233841+00:00",
+  "user_date": "2026-10-26",
+  "user_timezone": "America/New_York",
+  "product": {
+    "name": "Crystallographic Orthogonal Indexer",
+    "version": "1.0",
+    "user_shorthand": "Crystallographic Orthogonal Indexer",
+    "application_source_modified": true,
+    "application_release_created": false,
+    "source_update_prepared": true,
+    "compiled_release_created": false,
+    "numeric_windows_version": "1.0.0.0",
+    "legacy_name": "Acetate Frame Converter",
+    "legacy_version": "1.3.1",
+    "explicit_product_version_reset": true,
+    "canonical_module": "crystallographic_orthogonal_indexer.py",
+    "gui_class": "IndexerApp"
+  },
+  "objective": "Rename and organize the project around the active Crystallographic Orthogonal Indexer v1.0 source; preserve all evidence and verify the relocated project in the background.",
+  "status": "Workspace organization complete; all 135 original files preserved; 43/43 background source tests passed from renamed root.",
+  "paths": {
+    "project_root": ".",
+    "launcher": "main.py",
+    "scientific_module": "crystallographic_orthogonal_indexer.py",
+    "authoritative_state": "docs/PROJECT_STATE.json",
+    "decisions": "docs/DECISIONS.jsonl",
+    "current_report": "docs/WORKSPACE_ORGANIZATION_2026-10-26.txt",
+    "current_validation": "validation",
+    "background_test_runner": "tools/run_source_validation.py",
+    "path_map": "archive/organization-2026-10-26/path-map.json",
+    "original_readme": "archive/organization-2026-10-26/originals/README.md",
+    "baseline": "archive/baseline/AcetateFrameConverter-Codex-Handoff",
+    "optional_reference": "archive/baseline/AcetateFrameConverter-Codex-Handoff/reference",
+    "source_archive": "archive/source-archive/abpcstar_codex_handoff.zip",
+    "prior_source": "archive/versions/app_v1_3_1",
+    "previous_state": "archive/records/states/WORKSPACE_STATE_v1.3.json",
+    "current_test_receipt": "validation/layout-background-source-tests-2026-10-26.json",
+    "current_test_log": "validation/layout-background-source-tests-2026-10-26.log",
+    "source_manifest": "validation/SHA256_v1_0.json",
+    "organization_integrity": "validation/organization-integrity-2026-10-26.json"
+  },
+  "scientific_contract": {
+    "cartesian_basis": "Right-handed orthonormal ab'c*: x parallel +a; y along positive b minus its projection on a; z parallel a cross b. Distinct from physical F/R/T.",
+    "direct_matrix": "A=[a b c], direct-cell vectors as COLUMNS; positive-diagonal Cholesky of the normalized metric scaled by a,b,c.",
+    "units": {
+      "cell_lengths": "angstrom",
+      "cell_angles": "degrees",
+      "normals": "inverse angstrom without 2*pi",
+      "normalized_vectors": "dimensionless"
+    },
+    "angles": "alpha=angle(b,c); beta=angle(a,c); gamma=angle(a,b)",
+    "plane_conversion": "Signed Miller PLANE indices h=(h,k,l)^T: solve A.T n=h, so n=A^(-T)h. Signs retained. General direct [uvw] conversion A@[u,v,w] is not a GUI feature.",
+    "orthogonalization": "F=unit(nF); r=unit(nR); R=unit(r-(F dot r)F); U=F cross R. Front fixed; Right adjusted preserving projected signed sense. Preserve/report raw normals and all angular adjustments.",
+    "top_policy": "t=unit(nT); T=sign(t dot U)*U. Top selects hemisphere only; its raw normal need not be perpendicular. No guessed Top.",
+    "top_rejection": "Reject abs(t dot U) <= max(1e-8,128*machine_epsilon*cond(A)/sin(raw F,R angle)). This numerical guard is not experimental uncertainty.",
+    "other_bounds": "Positive finite lengths; angles strictly (0,180) degrees; positive-definite metric; reject minimum normalized-metric eigenvalue <=64*eps*maximum eigenvalue, cond(A)>1e12, sin(raw F,R angle)<=1e-10, noninteger/zero/nonfinite/oversized hkl. GUI |hkl_i|<=2^53; see G2 for callable-core validation ordering.",
+    "physical_components": "D=[F R T] columns; v_xyz=D v_physical; v_physical=D.T v_xyz. det(D)=+1 or -1; report handedness and F cross R=+T or -T. A left-handed D is not a proper rotation or an EasySpin right-handed Euler frame.",
+    "standard_components": "Q_standard=[F R U], separate right-handed computational reference; never relabel physical Top merely to force det +1.",
+    "xyz_premise": "Supplied XYZ is already Cartesian angstrom in this basis, assuming matching crystallographic/indexing convention. No inferred setting transform, reflection, molecular rotation or screen sign correction. Anchor movement translates arrows only.",
+    "new_label_preference": "r vector or principal axis of rotation; retain historical naming in original files.",
+    "uncertainty": "Printed float64 precision is not experimental accuracy. This converter does not infer a magnetic easy axis, fit EPR data or independently establish mounting/orientation."
+  },
+  "accepted_sample": {
+    "evidence_status": "Transferred v1.1 accepted reference; not recomputed or independently experimentally verified in this audit",
+    "cell": [
+      15.01,
+      17.6472,
+      16.2603,
+      90.0,
+      101.633,
+      90.0
+    ],
+    "signed_front_hkl": [
+      2,
+      5,
+      3
+    ],
+    "signed_right_hkl": [
+      3,
+      -5,
+      4
+    ],
+    "actual_signed_top_hkl": null,
+    "cartesian_rows": {
+      "F": [
+        0.350401200107385,
+        0.7450929911844157,
+        0.567499280573257
+      ],
+      "R": [
+        0.4221823687939797,
+        -0.6665180088852641,
+        0.6144231370245808
+      ],
+      "T": [
+        -0.8360508635500643,
+        -0.024293585974139553,
+        0.5481138341966098
+      ]
+    },
+    "handedness": "left-handed",
+    "cross_relation": "F cross R = -T",
+    "stored_determinant": -0.9999999999999997,
+    "raw_front_right_angle_deg": 86.86422317675817,
+    "adjustments_deg": [
+      0.0,
+      3.135776823241833,
+      180.0
+    ],
+    "interpretation": "Front/Right unchanged; explicit Top-only 180-degree display reversal from U. This is not a derived/measured Top hkl. The separate right-handed frame stays in the reference JSON."
+  },
+  "testing_policy": {
+    "background_only": true,
+    "desktop_control_authorized": false,
+    "visible_gui_tests": false,
+    "visible_test_opt_in_environment": "COI_VISIBLE_GUI_TESTS",
+    "temporary_directory": "validation/temporary",
+    "existing_test_methods": 43
+  },
+  "deferred_work": [
+    "Windows compilation/freezing/Inno compilation",
+    "Dependency/tool installation",
+    "Installation/upgrade/uninstall testing",
+    "Interactive native chooser and true high-DPI acceptance",
+    "Signing/distribution/licensing decisions"
+  ],
+  "preservation": {
+    "original_files": 135,
+    "original_file_bytes": 1875458,
+    "all_original_file_bytes_preserved": true,
+    "content_change_to_existing_file": "README.md; exact pre-layout original preserved under archive/organization-2026-10-26/originals/",
+    "active_scientific_application_unchanged": true,
+    "only_verified_empty_old_directories_removed": true,
+    "baseline_and_source_archive_untouched": true
+  },
+  "relocation": {
+    "previous_folder": "abpcstar-converter",
+    "current_folder": "Crystallographic Orthogonal Indexer",
+    "recorded_workspace": "D:\\OneDrive - Florida State University\\FSU\\Research\\Instrument Characterizations\\Torque Magnetometry\\Codex Torque\\Crystallographic Orthogonal Indexer",
+    "historical_paths": "Historical receipts keep original recorded paths. Resolve relocations through archive/organization-2026-10-26/path-map.json; do not rewrite historical evidence."
+  },
+  "history": {
+    "state_snapshots": "archive/records/states",
+    "reports": "archive/records/reports",
+    "decisions": "archive/records/decisions",
+    "validation": "archive/validation",
+    "audit": "archive/audit",
+    "legacy_application_history": "archive/application-history",
+    "previous_product_state": "archive/records/states/WORKSPACE_STATE_v1.3.json"
+  },
+  "remaining_gaps": [
+    {
+      "id": "G1",
+      "status": "Unresolved: actual sample signed Top hkl and independent orientation evidence absent."
+    },
+    {
+      "id": "G2",
+      "status": "Resolved in working source; focused before/after regressions pass after the fix."
+    },
+    {
+      "id": "G3",
+      "status": "Stored-reference checks added and passing; historical 96-case cross-version reproducibility remains unavailable."
+    },
+    {
+      "id": "G4",
+      "status": "Partial: real widget tests pass, earlier normal/minimum layout inspection and chooser opening recorded. Full interactive chooser/high-DPI acceptance pending under background-only scope."
+    },
+    {
+      "id": "G5",
+      "status": "Pip guard corrected/tested with mocked metadata. Official toolchain and actual Windows build qualification remain deferred."
+    },
+    {
+      "id": "G6",
+      "status": "Deferred: no frozen bundle, installer, installation QA, signing or completed redistribution review."
+    }
+  ],
+  "git": {
+    "repository_created": false,
+    "commits_or_pushes_performed": false,
+    "user_manages_commits_and_pushes": true,
+    "local_archive_ignored_by_default": true
+  },
+  "next_task": "Await the next user-requested source change or explicit request to resume Windows release work. Work at this root, read current state, and keep tests in the background without desktop control. Missing sample Top, interactive/high-DPI QA and build/install deferrals remain.",
+  "current_validation": {
+    "source_tests": {
+      "recorded_at_utc": "2026-10-26T14:09:38.041522+00:00",
+      "mode": "all",
+      "run": 43,
+      "passed": 43,
+      "failed_methods": [],
+      "failure_records": 0,
+      "error_records": 0,
+      "skipped": [],
+      "successful": true,
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "temporary_directory": "D:\\OneDrive - Florida State University\\FSU\\Research\\Instrument Characterizations\\Torque Magnetometry\\Codex Torque\\Crystallographic Orthogonal Indexer\\validation\\temporary",
+      "working_directory": "D:\\OneDrive - Florida State University\\FSU\\Research\\Instrument Characterizations\\Torque Magnetometry\\Codex Torque\\Crystallographic Orthogonal Indexer",
+      "method_count_note": "Failure/error records can contain multiple failed subtests of one method.",
+      "visible_gui_tests": false,
+      "desktop_automation": false
+    },
+    "original_files_preserved": 135,
+    "original_file_bytes": 1875458,
+    "active_application_test_build_sources_byte_identical": true,
+    "accepted_reference_fixture_sha256": "f2f006f8c6ff533727bf7250382993d495c1728e5c95d418a651b13545d625b1",
+    "source_archive_sha256": "e9dbddbe20ca562656a25d9c09a645e8f4f271b896f1e1b1268440b076b7dfd5",
+    "desktop_automation": false,
+    "build_or_install_performed": false
+  }
+}

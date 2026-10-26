@@ -1,0 +1,368 @@
+{
+  "premise": "Signed hkl and XYZ share the same crystallographic convention; XYZ is already Cartesian angstrom in ab'c*. No coordinate rotation/reflection is applied.",
+  "policy": "Standard provenance: Front-first Gram-Schmidt: Front preserved exactly; Right is its signed original projected perpendicular to Front and normalized; Top = Front cross Right. This prioritization is a convention, not inferred experimental certainty.",
+  "input": {
+    "filename": "ho2_thd_4pc_c7h8_I2M_II.xyz",
+    "sha256": "62684d4f524dced3df3a53f01aa52858c357920a8f98b3e799eff39c04eb357d",
+    "atom_count": 188,
+    "cell_a_b_c_alpha_beta_gamma": [
+      15.01,
+      17.6472,
+      16.2603,
+      90.0,
+      101.633,
+      90.0
+    ],
+    "front_hkl": [
+      2,
+      5,
+      3
+    ],
+    "right_hkl": [
+      3,
+      -5,
+      4
+    ]
+  },
+  "basis": {
+    "x": "parallel +a",
+    "y": "parallel +b minus its projection on a (b')",
+    "z": "parallel +a cross +b (c*)",
+    "A_columns_direct_cell_angstrom": [
+      [
+        15.01,
+        1.0805793496956587e-15,
+        -3.2787607557751373
+      ],
+      [
+        0.0,
+        17.6472,
+        1.1964224106452845e-15
+      ],
+      [
+        0.0,
+        0.0,
+        15.92630164213867
+      ]
+    ],
+    "B_columns_reciprocal_inv_angstrom": [
+      [
+        0.06662225183211193,
+        0.0,
+        0.0
+      ],
+      [
+        -4.079436372909238e-18,
+        0.05666621333695997,
+        0.0
+      ],
+      [
+        0.013715577519299308,
+        -4.256903397042623e-18,
+        0.0627892163836798
+      ]
+    ],
+    "volume_angstrom3": 4218.630001390632
+  },
+  "raw_signed": {
+    "front_normal_inv_angstrom": [
+      0.13324450366422386,
+      0.28333106668479985,
+      0.215798804189638
+    ],
+    "right_normal_inv_angstrom": [
+      0.19986675549633579,
+      -0.28333106668479985,
+      0.29230359809261713
+    ],
+    "front_unit": [
+      0.350401200107385,
+      0.7450929911844157,
+      0.567499280573257
+    ],
+    "right_unit": [
+      0.44071799411883944,
+      -0.6247617272356502,
+      0.6445466886435719
+    ],
+    "front_right_angle_deg": 86.86422317675817,
+    "front_right_dot": 0.05470231202571033,
+    "top_unit_from_raw_cross": [
+      0.8360508635500643,
+      0.02429358597413961,
+      -0.5481138341966099
+    ]
+  },
+  "anchor": {
+    "atom_index_1based": 1,
+    "xyz_file_line_1based": 3,
+    "element": "Ho",
+    "xyz_angstrom": [
+      4.795005,
+      8.8236,
+      9.342369
+    ],
+    "arrow_length_angstrom": 6.0,
+    "arrow_endpoints_F_R_T_angstrom": [
+      [
+        6.897412200644309,
+        13.294157947106495,
+        12.747364683439542
+      ],
+      [
+        7.3280992127638775,
+        4.824491946688416,
+        13.028907822147485
+      ],
+      [
+        -0.22130018130038565,
+        8.677838484155163,
+        12.631052005179658
+      ]
+    ]
+  },
+  "ho_axis": {
+    "convention": "Ho1 to Ho2, ordered by XYZ appearance; geometric molecular axis only, not an independently established magnetic easy axis.",
+    "ho1_atom_index_1based": 1,
+    "ho2_atom_index_1based": 122,
+    "ho1_file_line_1based": 3,
+    "ho2_file_line_1based": 124,
+    "ho1_xyz_angstrom": [
+      4.795005,
+      8.8236,
+      9.342369
+    ],
+    "ho2_xyz_angstrom": [
+      6.936234,
+      8.8236,
+      6.583933
+    ],
+    "delta_xyz_angstrom": [
+      2.141229,
+      0.0,
+      -2.7584359999999997
+    ],
+    "distance_angstrom": 3.491966608737403,
+    "unit_xyz": [
+      0.6131871349062551,
+      0.0,
+      -0.7899376795579877
+    ],
+    "unit_components_F_R_T": [
+      -0.23342755688530528,
+      -0.22647918999922054,
+      -0.9456314039750658
+    ],
+    "delta_components_F_R_T_angstrom": [
+      -0.8151212342026368,
+      -0.7908577690511721,
+      -3.3021132868543996
+    ],
+    "directed_angles_to_F_R_T_deg": [
+      103.49895074703862,
+      103.08987510947105,
+      161.0198663361115
+    ],
+    "directed_angles_to_raw_front_right_deg": [
+      103.49895074703862,
+      103.82216419149648
+    ],
+    "standard_right_handed_reference": {
+      "unit_components_F_R_T": [
+        -0.23342755688530528,
+        -0.22647918999922054,
+        0.9456314039750658
+      ],
+      "delta_components_F_R_T_angstrom": [
+        -0.8151212342026368,
+        -0.7908577690511721,
+        3.3021132868543996
+      ],
+      "directed_angles_to_F_R_T_deg": [
+        103.49895074703862,
+        103.08987510947105,
+        18.980133663888484
+      ]
+    },
+    "component_frame": "final display_frame (left-handed when reverse_display_top is true)"
+  },
+  "schema_version": "1.1",
+  "standard_right_handed_frame": {
+    "front_unit": [
+      0.350401200107385,
+      0.7450929911844157,
+      0.567499280573257
+    ],
+    "right_unit": [
+      0.4221823687939797,
+      -0.6665180088852641,
+      0.6144231370245808
+    ],
+    "top_unit": [
+      0.8360508635500643,
+      0.024293585974139553,
+      -0.5481138341966098
+    ],
+    "Q_columns_F_R_T_acetate_to_xyz": [
+      [
+        0.350401200107385,
+        0.4221823687939797,
+        0.8360508635500643
+      ],
+      [
+        0.7450929911844157,
+        -0.6665180088852641,
+        0.024293585974139553
+      ],
+      [
+        0.567499280573257,
+        0.6144231370245808,
+        -0.5481138341966098
+      ]
+    ],
+    "P_rows_F_R_T_xyz_to_acetate": [
+      [
+        0.350401200107385,
+        0.7450929911844157,
+        0.567499280573257
+      ],
+      [
+        0.4221823687939797,
+        -0.6665180088852641,
+        0.6144231370245808
+      ],
+      [
+        0.8360508635500643,
+        0.024293585974139553,
+        -0.5481138341966098
+      ]
+    ],
+    "adjustment_deg_front_right_top": [
+      0.0,
+      3.135776823241833,
+      1.0036165205546937e-14
+    ]
+  },
+  "standard_right_handed_validation": {
+    "Q_transpose_Q": [
+      [
+        0.9999999999999998,
+        3.700599868170258e-17,
+        1.253538921562512e-17
+      ],
+      [
+        3.700599868170258e-17,
+        0.9999999999999998,
+        3.897549596702357e-17
+      ],
+      [
+        1.253538921562512e-17,
+        3.897549596702357e-17,
+        0.9999999999999998
+      ]
+    ],
+    "max_orthogonality_error": 2.220446049250313e-16,
+    "column_norms": [
+      0.9999999999999999,
+      0.9999999999999999,
+      0.9999999999999999
+    ],
+    "det_Q": 0.9999999999999997,
+    "cross_F_R_minus_T_norm": 0.0,
+    "reciprocal_duality_error": 4.8366230195014124e-17
+  },
+  "display_frame": {
+    "reverse_display_top": true,
+    "policy": "Explicit user-requested Top-only display reversal. Front and Right unchanged; molecule and blue Ho axis unchanged. This is an orthonormal LEFT-HANDED display convention, not a proper rotation or an EasySpin right-handed frame.",
+    "handedness": "left-handed",
+    "cross_relation": "F cross R = -T",
+    "is_proper_rotation": false,
+    "front_unit": [
+      0.350401200107385,
+      0.7450929911844157,
+      0.567499280573257
+    ],
+    "right_unit": [
+      0.4221823687939797,
+      -0.6665180088852641,
+      0.6144231370245808
+    ],
+    "top_unit": [
+      -0.8360508635500643,
+      -0.024293585974139553,
+      0.5481138341966098
+    ],
+    "D_columns_F_R_T_display_to_xyz": [
+      [
+        0.350401200107385,
+        0.4221823687939797,
+        -0.8360508635500643
+      ],
+      [
+        0.7450929911844157,
+        -0.6665180088852641,
+        -0.024293585974139553
+      ],
+      [
+        0.567499280573257,
+        0.6144231370245808,
+        0.5481138341966098
+      ]
+    ],
+    "C_rows_F_R_T_xyz_to_display": [
+      [
+        0.350401200107385,
+        0.7450929911844157,
+        0.567499280573257
+      ],
+      [
+        0.4221823687939797,
+        -0.6665180088852641,
+        0.6144231370245808
+      ],
+      [
+        -0.8360508635500643,
+        -0.024293585974139553,
+        0.5481138341966098
+      ]
+    ],
+    "adjustment_deg_from_raw_front_right_cross_top": [
+      0.0,
+      3.135776823241833,
+      180.0
+    ],
+    "adjustment_deg_from_standard_F_R_T": [
+      0.0,
+      0.0,
+      180.0
+    ]
+  },
+  "display_validation": {
+    "D_transpose_D": [
+      [
+        0.9999999999999998,
+        3.700599868170258e-17,
+        -1.253538921562512e-17
+      ],
+      [
+        3.700599868170258e-17,
+        0.9999999999999998,
+        -3.897549596702357e-17
+      ],
+      [
+        -1.253538921562512e-17,
+        -3.897549596702357e-17,
+        0.9999999999999998
+      ]
+    ],
+    "max_orthogonality_error": 2.220446049250313e-16,
+    "column_norms": [
+      0.9999999999999999,
+      0.9999999999999999,
+      0.9999999999999999
+    ],
+    "det_D": -0.9999999999999997,
+    "F_cross_R_dot_T": -0.9999999999999998,
+    "cross_relation": "F cross R = -T"
+  }
+}

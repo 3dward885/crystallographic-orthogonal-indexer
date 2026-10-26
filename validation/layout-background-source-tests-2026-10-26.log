@@ -1,0 +1,48 @@
+test_clear_example_and_repeat (test_app.ControllerTests.test_clear_example_and_repeat) ... ok
+test_edits_during_dialog_never_save_old_result (test_app.ControllerTests.test_edits_during_dialog_never_save_old_result) ... ok
+test_output_readonly_after_calculate_error_edit (test_app.ControllerTests.test_output_readonly_after_calculate_error_edit) ... ok
+test_reentrant_and_stale_save_do_not_open_dialog (test_app.ControllerTests.test_reentrant_and_stale_save_do_not_open_dialog) ... ok
+test_save_dialog_cancel (test_app.ControllerTests.test_save_dialog_cancel) ... ok
+test_save_success_then_failure (test_app.ControllerTests.test_save_success_then_failure) ... ok
+test_trace_invalidates_and_disables_save (test_app.ControllerTests.test_trace_invalidates_and_disables_save) ... ok
+test_cubic_both_handednesses (test_app.CoreTests.test_cubic_both_handednesses) ... ok
+test_invalid_cells (test_app.CoreTests.test_invalid_cells) ... ok
+test_no_invented_top_in_example (test_app.CoreTests.test_no_invented_top_in_example) ... ok
+test_nonorthogonal_adjustments (test_app.CoreTests.test_nonorthogonal_adjustments) ... ok
+test_oblique_plane_perpendicularity (test_app.CoreTests.test_oblique_plane_perpendicularity) ... ok
+test_orthorhombic_normal_not_direct_direction (test_app.CoreTests.test_orthorhombic_normal_not_direct_direction) ... ok
+test_parse_fields (test_app.CoreTests.test_parse_fields) ... ok
+test_random_valid_cells_and_roundtrip (test_app.CoreTests.test_random_valid_cells_and_roundtrip) ... ok
+test_report_conventions (test_app.CoreTests.test_report_conventions) ... ok
+test_signed_inputs_no_hidden_flip (test_app.CoreTests.test_signed_inputs_no_hidden_flip) ... ok
+test_top_ambiguity_boundary (test_app.CoreTests.test_top_ambiguity_boundary) ... ok
+test_zero_parallel_noninteger_nonfinite (test_app.CoreTests.test_zero_parallel_noninteger_nonfinite) ... ok
+test_build_resize_calculate_clear_close (test_app.NativeTkTests.test_build_resize_calculate_clear_close) ... ok
+test_atomic_save_unicode_paths_and_repeat (test_app.StateTests.test_atomic_save_unicode_paths_and_repeat) ... ok
+test_failed_replace_preserves_existing_and_cleans_temp (test_app.StateTests.test_failed_replace_preserves_existing_and_cleans_temp) ... ok
+test_failed_write_missing_folder (test_app.StateTests.test_failed_write_missing_folder) ... ok
+test_initial_edit_calculate_and_stale_save (test_app.StateTests.test_initial_edit_calculate_and_stale_save) ... ok
+test_repeated_calculations_and_error_invalidates (test_app.StateTests.test_repeated_calculations_and_error_invalidates) ... ok
+test_save_cancellation_writes_nothing (test_app.StateTests.test_save_cancellation_writes_nothing) ... ok
+test_build_gates_dependencies_and_never_installs_finished_app (test_packaging.PackagingTests.test_build_gates_dependencies_and_never_installs_finished_app) ... ok
+test_environment_gate_nonwindows (test_packaging.PackagingTests.test_environment_gate_nonwindows) ... ok
+test_icon_is_multisize_windows_ico (test_packaging.PackagingTests.test_icon_is_multisize_windows_ico) ... ok
+test_installer_peruser_shortcuts_uninstall (test_packaging.PackagingTests.test_installer_peruser_shortcuts_uninstall) ... ok
+test_license_collection_copies_real_texts_and_hashes (test_packaging.PackagingTests.test_license_collection_copies_real_texts_and_hashes) ... ok
+test_license_collection_missing_fails (test_packaging.PackagingTests.test_license_collection_missing_fails) ... ok
+test_main_normal_launch_and_option_rejection (test_packaging.PackagingTests.test_main_normal_launch_and_option_rejection) ... ok
+test_product_version_metadata_consistent (test_packaging.PackagingTests.test_product_version_metadata_consistent) ... ok
+test_spec_fails_closed_on_nonwindows (test_packaging.PackagingTests.test_spec_fails_closed_on_nonwindows) ... ok
+test_matching_environment_receipt_includes_pip (test_regressions.BuildEnvironmentTests.test_matching_environment_receipt_includes_pip) ... ok
+test_reused_environment_with_wrong_pip_is_rejected (test_regressions.BuildEnvironmentTests.test_reused_environment_with_wrong_pip_is_rejected) ... ok
+test_exact_noninteger_cannot_round_into_an_integer (test_regressions.IntegerBoundaryTests.test_exact_noninteger_cannot_round_into_an_integer) ... ok
+test_integer_beyond_boundary_is_rejected_before_rounding (test_regressions.IntegerBoundaryTests.test_integer_beyond_boundary_is_rejected_before_rounding) ... ok
+test_integer_valued_floats_and_numeric_text_remain_accepted (test_regressions.IntegerBoundaryTests.test_integer_valued_floats_and_numeric_text_remain_accepted) ... ok
+test_signed_integer_boundary_is_preserved (test_regressions.IntegerBoundaryTests.test_signed_integer_boundary_is_preserved) ... ok
+test_explicit_top_reversal_is_separate_from_right_handed_reference (test_regressions.StoredReferenceTests.test_explicit_top_reversal_is_separate_from_right_handed_reference) ... ok
+test_stored_cell_normals_and_front_right (test_regressions.StoredReferenceTests.test_stored_cell_normals_and_front_right) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 1.277s
+
+OK

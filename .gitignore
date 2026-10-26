@@ -1,0 +1,18 @@
+# Local provenance/backups are retained on disk; the active source is at the root.
+archive/
+
+# Python caches and local environments.
+__pycache__/
+*.py[cod]
+.venv*/
+
+# Generated build artifacts and test scratch space.
+.build/
+build/
+dist/
+release/
+validation/temporary/
+
+# Default user report and interrupted atomic-save temporary files.
+/crystallographic_indices.txt
+.coi-*.tmp

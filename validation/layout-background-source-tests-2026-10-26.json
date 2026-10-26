@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-26T14:09:38.041522+00:00",
+  "mode": "all",
+  "run": 43,
+  "passed": 43,
+  "failed_methods": [],
+  "failure_records": 0,
+  "error_records": 0,
+  "skipped": [],
+  "successful": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "temporary_directory": "D:\\OneDrive - Florida State University\\FSU\\Research\\Instrument Characterizations\\Torque Magnetometry\\Codex Torque\\Crystallographic Orthogonal Indexer\\validation\\temporary",
+  "working_directory": "D:\\OneDrive - Florida State University\\FSU\\Research\\Instrument Characterizations\\Torque Magnetometry\\Codex Torque\\Crystallographic Orthogonal Indexer",
+  "method_count_note": "Failure/error records can contain multiple failed subtests of one method.",
+  "visible_gui_tests": false,
+  "desktop_automation": false
+}

@@ -1,0 +1,60 @@
+CRYSTALLOGRAPHIC ORTHOGONAL INDEXER 1.0
+
+SOURCE UPDATE: no Windows executable or installer has been built or installation-
+tested. Installation instructions below describe the intended future package.
+
+A desktop calculator for signed crystallographic plane normals and orthogonal
+Front, Right and Top physical labels. This installed application bundles its
+Python, Tk and NumPy runtime: the end user does not install Python separately.
+
+Start from the Windows Start menu: Crystallographic Orthogonal Indexer.
+
+1. Enter a, b, c in angstrom and alpha, beta, gamma in degrees. Alpha is the
+   b-c angle, beta the a-c angle and gamma the a-b angle. Use a decimal point.
+2. Enter signed integer h, k, l for each of Front, Right and Top. These describe
+   plane normals, not direct-lattice directions. Top is required, never guessed.
+3. Click Calculate. Front is preserved, Right is orthogonalized, and your Top
+   input selects the sign of the perpendicular Top. Its handedness is explicit.
+4. Click Save TXT and choose a folder and filename. You can cancel without
+   writing. Editing any input clears stale output and disables saving until
+   Calculate succeeds again. The results pane is read-only but selectable.
+
+The partial example loads only cell, Front and Right: enter your actual Top.
+Clear changes only the form. Closing discards unsaved form contents, not files.
+No XYZ, VESTA, MATLAB or network connection is needed to calculate or save.
+
+SCIENTIFIC CONVENTION
+Cartesian x is parallel +a; y is parallel b minus its projection on a (b');
+z is parallel a cross b (c*). Plane normal n = inv(A).T @ hkl, where A has the
+three direct-cell vectors as columns. The original signed normals and all
+angular adjustments are retained in the TXT report.
+
+The physical frame may be right-handed (F cross R = T, determinant +1) or
+left-handed (F cross R = -T, determinant -1). Do NOT use a left-handed result
+as an EasySpin rotation/Euler frame. The report includes a separately named
+right-handed computational reference without relabeling physical Top.
+
+Zero, invalid, nearly parallel or ambiguous near-coplanar Top inputs are
+rejected instead of silently selecting an unstable frame. Numerical validation
+does not independently establish experimental orientation or a magnetic easy
+axis. Comparing a molecule requires matching crystallographic conventions and
+already-Cartesian coordinates in the stated ab'c* frame.
+
+INSTALLATION / REMOVAL
+This setup installs for the current Windows user, without requesting admin
+privileges, into Local AppData\Programs\Crystallographic Orthogonal Indexer by default.
+It creates a Start-menu entry; the desktop shortcut is optional and unchecked.
+Uninstall through Windows Settings > Apps, or the Start-menu uninstall entry.
+User-created TXT reports outside the installation folder are preserved. Store
+reports in your own documents folder rather than the installation directory.
+There is no background service, autorun entry, auto-updater or telemetry.
+
+SIGNING
+This candidate has no code-signing certificate or verified publisher identity.
+Windows SmartScreen or organizational policies may warn or block it. Do not
+weaken security controls to install it; use your normal organizational review
+or arrange a properly signed release. Signing is a separate release step and
+does not guarantee that every reputation warning disappears.
+
+Third-party notices and runtime license texts are included with the installed
+application. The packaging preparation is not a complete legal/license audit.

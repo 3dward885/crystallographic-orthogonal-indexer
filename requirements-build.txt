@@ -1,0 +1,4 @@
+# Top-level build/runtime pins. Transitive resolutions are captured by pip freeze.
+numpy==2.3.5
+pyinstaller==6.22.3
+pyinstaller-hooks-contrib==2026.9

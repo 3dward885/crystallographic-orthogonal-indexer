@@ -1,0 +1,15 @@
+CRYSTALLOGRAPHIC ORTHOGONAL INDEXER 1.0 - SOURCE UPDATE
+2026-10-26
+
+The user explicitly renamed the app and reset its product version to 1.0,
+independently of legacy version numbers. GUI/report identity, default TXT name,
+module/launcher imports, build artifact names, Windows metadata and docs follow
+that identity. Numeric Windows resource version is 1.0.0.0. Stable AppId retained.
+
+Scientific calculations, sign conventions, stability guards and accepted
+reference data are unchanged. Previous fixes/regressions and hidden Tk tests
+are retained. Baseline, previous working version and source archives remain
+preserved. Existing icon artwork is unchanged; no artwork redesign was requested.
+
+Testing stays in the background without desktop control. Windows compilation,
+dependency installation and installation testing remain deferred.
